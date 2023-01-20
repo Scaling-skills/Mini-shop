@@ -4,4 +4,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700b3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="color">#F7F3F2</color>
+    <color name="yellow">#FFF000</color>
+    <color name="green">#1BFF00</color>
+    <color name="ocean">#00FFFB</color>
+    <color name="blue">#0032FF</color>
+    <color name="red">#FF0000</color>
 </resources>
