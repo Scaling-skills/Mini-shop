@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="blue">#0032FF</color>
+    <color name="color">#F7F3F2</color>
+    <color name="green">#1BFF00</color>
+    <color name="ocean">#00FFFB</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700b3</color>
+    <color name="red">#FF0000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFF000</color>
     <dimen name="fab_margin">16dp</dimen>
     <string name="action_settings">Settings</string>
     <string name="app_name">My Application</string>
+    <string name="email">email</string>
     <string name="first_fragment_label">First Fragment</string>
+    <string name="login">Login</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -43,9 +55,10 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="next">Next</string>
+    <string name="password">password</string>
     <string name="previous">Previous</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MyApplication" parent="Theme.AppCompat.Light.NoActionBar">
         
         
     </style>
