@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
 
-        binding.button2.setOnClickListener {
+        button2.setOnClickListener {
             if (editTextTextEmailAddress3.text.isNullOrBlank() && editTextTextPassword2.text.isNullOrBlank()) {
                 Toast.makeText(this, "Please fill the required fields", Toast.LENGTH_SHORT).show()
             } else {
