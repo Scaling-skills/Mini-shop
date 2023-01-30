@@ -10,50 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87d52b41-2a0b-4fcd-9a5a-e1d33b9a9784" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Login/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/androidTest/java/com/example/login/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/data/LoginDataSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/data/LoginRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/data/Result.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/data/model/LoggedInUser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/ui/login/LoggedInUserView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/ui/login/LoginActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/ui/login/LoginFormState.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/ui/login/LoginResult.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/ui/login/LoginViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/java/com/example/login/ui/login/LoginViewModelFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/layout-w1240dp/activity_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/layout-w936dp/activity_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/values-land/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/values-w1240dp/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/values-w600dp/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Login/src/test/java/com/example/login/ExampleUnitTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
