@@ -4,22 +4,17 @@ plugins {
 }
 
 android {
-    namespace 'com.example.myappl'
+    namespace 'com.example.myapplication'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.myappl"
+        applicationId "com.example.myapplication"
         minSdk 33
         targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        externalNativeBuild {
-            cmake {
-                cppFlags ''
-            }
-        }
     }
 
     buildTypes {
@@ -37,12 +32,6 @@ android {
     }
     buildFeatures {
         viewBinding true
-    }
-    externalNativeBuild {
-        cmake {
-            path file('src/main/cpp/CMakeLists.txt')
-            version '3.18.1'
-        }
     }
 }
 
