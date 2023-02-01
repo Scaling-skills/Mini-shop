@@ -13,6 +13,6 @@ import com.example.myapplication.databinding.FragmentSecondBinding
 class PhoneAct : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.PhoneAct)
+        setContentView(R.layout.phone_act)
     }
 }
