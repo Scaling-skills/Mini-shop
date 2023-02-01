@@ -79,9 +79,9 @@ class PhoneAct : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
 
-
+                    Toast.makeText(this, "Authorization successful" , Toast.LENGTH_SHORT).show()
                 } else {
-
+                    Log.d("TAG", "signInWithPhoneAuthorization: ${task.exception.toString()}")
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
 
                     }
@@ -121,6 +121,7 @@ class PhoneAct : AppCompatActivity() {
             val intent = Intent(this@PhoneAct , Otp::class.java)
             intent.putExtra("OTP" , verificationId)
             intent.putExtra("resendToken" , token)
+            intent.putExtra("phoneNumber" , number)
             startActivity(intent)
             mProgressBar.visibility = View.INVISIBLE
 
