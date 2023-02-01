@@ -47,4 +47,6 @@
     <string name="password">password</string>
     <string name="login">login</string>
     <string name="skip">skip</string>
+    <string name="type_your_number">Type your number</string>
+    <string name="send_otp">Send otp</string>
 </resources>
