@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAnchorView(R.id.fab)
                 .setAction("Action", null).show()
-                setContentView(R.layout.otp_act)
+                setContentView(R.layout.phone_act)
         }
     }
 

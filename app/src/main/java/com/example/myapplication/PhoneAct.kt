@@ -1,6 +1,8 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -43,7 +45,7 @@ class PhoneAct : AppCompatActivity() {
             if (number.isNotEmpty()){
                 if (number.length == 9){
                     number = "+48$number"
-
+                    mProgressBar.visibility = View.VISIBLE
                     val options = PhoneAuthOptions.newBuilder(auth)
                         .setPhoneNumber(number)
                         .setTimeout(60L, TimeUnit.SECONDS)
@@ -89,7 +91,7 @@ class PhoneAct : AppCompatActivity() {
     }
 
 
-    val callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+    private val callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
         override fun onVerificationCompleted(credential: PhoneAuthCredential) {
 
@@ -102,9 +104,10 @@ class PhoneAct : AppCompatActivity() {
 
 
             if (e is FirebaseAuthInvalidCredentialsException) {
-                // Invalid request
-            } else if (e is FirebaseTooManyRequestsException) {
 
+                Log.d("TAG", "VerificationFailed: ${e.toString()}")
+            } else if (e is FirebaseTooManyRequestsException) {
+                Log.d("TAG", "VerificationFailed: ${e.toString()}")
             }
 
 
@@ -115,6 +118,19 @@ class PhoneAct : AppCompatActivity() {
             token: PhoneAuthProvider.ForceResendingToken
         ) {
 
+            val intent = Intent(this@PhoneAct , Otp::class.java)
+            intent.putExtra("OTP" , verificationId)
+            intent.putExtra("resendToken" , token)
+            startActivity(intent)
+            mProgressBar.visibility = View.INVISIBLE
+
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (auth.currentUser != null) {
+            startActivity(Intent(this , MainActivity::class.java))
 
         }
     }
