@@ -2,6 +2,8 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
@@ -38,6 +40,7 @@ class Otp : AppCompatActivity() {
     private lateinit var inputOTP4 : EditText
     private lateinit var inputOTP5 : EditText
     private lateinit var inputOTP6 : EditText
+    private lateinit var progressBar : ProgressBar
 
     private lateinit var OTP : String
     private lateinit var resendToken : PhoneAuthProvider.ForceResendingToken
@@ -53,7 +56,15 @@ class Otp : AppCompatActivity() {
         phoneNumber = intent.getStringExtra("phoneNumber")!!
 
         init()
+        progressBar.visibility = View.INVISIBLE
         addTextChangeListener()
+        resendOTPvVisibility()
+
+        resendTV.setOnClickListener{
+            resendVerificationCode()
+            resendOTPvVisibility()
+        }
+
 
         verifyBtn.setOnClickListener{
             val typedOTP = (inputOTP1.text.toString() + inputOTP2.text.toString() + inputOTP3.text.toString()
@@ -64,6 +75,7 @@ class Otp : AppCompatActivity() {
                     val credential : PhoneAuthCredential = PhoneAuthProvider.getCredential(
                         OTP , typedOTP
                     )
+                    progressBar.visibility = View.VISIBLE
                     signInWithPhoneAuthCredential(credential)
                 }else{
                     Toast.makeText(this,"Enter correct OTP", Toast.LENGTH_SHORT).show()
@@ -76,7 +88,21 @@ class Otp : AppCompatActivity() {
     }
 
 
+    private fun resendOTPvVisibility(){
+        inputOTP1.setText("")
+        inputOTP2.setText("")
+        inputOTP3.setText("")
+        inputOTP4.setText("")
+        inputOTP5.setText("")
+        inputOTP6.setText("")
+        resendTV.visibility = View.INVISIBLE
+        resendTV.isEnabled = false
 
+        Handler(Looper.myLooper()!!).postDelayed(Runnable {
+            resendTV.visibility = View.VISIBLE
+            resendTV.isEnabled = true
+        } , 60000)
+    }
     private fun resendVerificationCode(){
         val options = PhoneAuthOptions.newBuilder(auth)
             .setPhoneNumber(phoneNumber)
@@ -124,6 +150,7 @@ class Otp : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
 
+                    progressBar.visibility = View.VISIBLE
                     Toast.makeText(this, "Authorization successful" , Toast.LENGTH_SHORT).show()
                     sendToMain()
                 } else {
@@ -153,6 +180,7 @@ class Otp : AppCompatActivity() {
 
     private fun init() {
         auth = FirebaseAuth.getInstance()
+        progressBar = findViewById(R.id.otpProgressBar)
         verifyBtn = findViewById(R.id.verifyOTPBtn)
         resendTV = findViewById(R.id.resendTextView)
         inputOTP1 = findViewById(R.id.otpEditText1)
