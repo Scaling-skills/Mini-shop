@@ -80,6 +80,7 @@ class PhoneAct : AppCompatActivity() {
                 if (task.isSuccessful) {
 
                     Toast.makeText(this, "Authorization successful" , Toast.LENGTH_SHORT).show()
+                    sendToMain()
                 } else {
                     Log.d("TAG", "signInWithPhoneAuthorization: ${task.exception.toString()}")
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
@@ -90,7 +91,9 @@ class PhoneAct : AppCompatActivity() {
             }
     }
 
-
+    private fun sendToMain(){
+        startActivity(Intent(this , MainActivity::class.java))
+    }
     private val callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
         override fun onVerificationCompleted(credential: PhoneAuthCredential) {
