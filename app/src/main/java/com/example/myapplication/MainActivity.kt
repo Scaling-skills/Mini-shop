@@ -37,9 +37,8 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         auth = FirebaseAuth.getInstance()
-        fab = findViewById(R.id.fab)
-        fab.setOnClickListener {
-            auth.signOut()
+        binding.fab.setOnClickListener {
+
             startActivity(Intent(this, PhoneAct::class.java))
 
         }
