@@ -49,4 +49,5 @@
     <string name="skip">skip</string>
     <string name="type_your_number">Type your number</string>
     <string name="send_otp">Send otp</string>
+    <string name="todo">TODO</string>
 </resources>
