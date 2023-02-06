@@ -15,6 +15,10 @@ object DataFetcher {
         .client(client)
         .build()
 
+    fun <T> buildData(Data: Class<T>): T {
+        return retrofit.create(Data)
+    }
+
 
 
 
