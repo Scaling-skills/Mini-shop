@@ -11,4 +11,5 @@ import com.example.myapplication.model.DataModel
 
 
 class ViewModel {
+
 }
