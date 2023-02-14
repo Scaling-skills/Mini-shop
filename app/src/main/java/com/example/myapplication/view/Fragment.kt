@@ -12,5 +12,5 @@ import com.example.myapplication.databinding.FragmentBinding
 import com.example.myapplication.viewmodel.ViewModel
 import com.example.myapplication.R
 
-class Fragment {
+class Fragment: Fragment() {
 }
